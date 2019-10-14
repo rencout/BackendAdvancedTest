@@ -1,0 +1,4 @@
+C:\GitHub\BackendAdvancedTest\obj\Debug\netcoreapp2.2\BackendAdvancedTestApi.csprojAssemblyReference.cache
+C:\GitHub\BackendAdvancedTest\obj\Debug\netcoreapp2.2\BackendAdvancedTestApi.csproj.CoreCompileInputs.cache
+C:\GitHub\BackendAdvancedTest\obj\Debug\netcoreapp2.2\BackendAdvancedTestApi.AssemblyInfoInputs.cache
+C:\GitHub\BackendAdvancedTest\obj\Debug\netcoreapp2.2\BackendAdvancedTestApi.AssemblyInfo.cs

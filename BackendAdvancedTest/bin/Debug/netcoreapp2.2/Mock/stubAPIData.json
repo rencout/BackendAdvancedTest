@@ -1,0 +1,76 @@
+{
+  "hosts": [
+    {
+      "name": "ApiWrapper:OpenWeather",
+      "methods": [
+        {
+          "name": "GET",
+          "route": ".*weather.*",
+          "request": {},
+          "response": {
+            "main": {
+              "temp": 29.5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "ApiWrapper:SpotifyAuthorization",
+      "methods": [
+        {
+          "name": "POST",
+          "route": ".*",
+          "request": {},
+          "response": {
+            "access_token": "BQA2_1O6MGM_yIFQL8rXltCsxQm22MvnhaiYaELoNpvuYJ-e8dKiB0xMw35HkTX79XKy-h29QD5rlzd_Z1o"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ApiWrapper:SpotifyRecommendations",
+      "methods": [
+        {
+          "name": "GET",
+          "route": ".*recommendations.*",
+          "request": {},
+          "response": {
+            "tracks": [
+              {
+                "name": "Bad Romance"
+              },
+              {
+                "name": "I Have Questions"
+              },
+              {
+                "name": "No Broken Hearts (feat. Nicki Minaj)"
+              },
+              {
+                "name": "Wrecking Ball"
+              },
+              {
+                "name": "Heathens"
+              },
+              {
+                "name": "When You Love Someone"
+              },
+              {
+                "name": "Sugar (feat. Francesco Yates)"
+              },
+              {
+                "name": "All Time Low"
+              },
+              {
+                "name": "Are You With Me - Radio Edit"
+              },
+              {
+                "name": "Gangsta"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

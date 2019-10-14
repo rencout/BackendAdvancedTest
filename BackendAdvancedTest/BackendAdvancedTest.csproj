@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+    <RuntimeFrameworkVersion>2.2.0</RuntimeFrameworkVersion>
+    <PackageId>BackendAdvancedTest</PackageId>
+    <Authors>BackendAdvancedTest</Authors>
+    <Company>BackendAdvancedTest</Company>
+    <Product>BackendAdvancedTest</Product>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.2\BackendAdvancedTest.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup> 
+    <PackageReference Include="LiquidApplication.Middleware" Version="1.0.0-alpha2" /> 
+    <PackageReference Include="LiquidApplication.OnAzure" Version="1.0.0-alpha2" /> 
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" /> 
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.WindowsServices" Version="2.2.0" /> 
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Mock\stubAPIData.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

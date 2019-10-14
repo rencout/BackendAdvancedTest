@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BackendAdvancedTest.UnitTest</name>
+    </assembly>
+    <members>
+        <member name="T:BackendAdvancedTest.UnitTest.BackendAdvancedUnitTest">
+            <summary>
+            BackendAdvancedUnitTest test class
+            </summary>
+        </member>
+        <member name="M:BackendAdvancedTest.UnitTest.BackendAdvancedUnitTest.#ctor(Liquid.Domain.API.LightApiMock{BackendAdvancedTest.Startup})">
+            <summary>
+            Constructor for unit tests
+            </summary>
+            <param name="lightTest"></param>
+        </member>
+        <member name="M:BackendAdvancedTest.UnitTest.BackendAdvancedUnitTest.PlaylistByCityNameTest">
+            <summary>
+            Unit Test validate playlistByCoordinate
+            </summary>s
+        </member>
+        <member name="M:BackendAdvancedTest.UnitTest.BackendAdvancedUnitTest.PlaylistByCoordinateTest">
+            <summary>
+            Unit Test validate playlistByCoordinate
+            </summary>s
+        </member>
+    </members>
+</doc>

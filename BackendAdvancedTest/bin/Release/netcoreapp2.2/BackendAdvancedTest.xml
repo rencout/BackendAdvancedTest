@@ -1,0 +1,354 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BackendAdvancedTest</name>
+    </assembly>
+    <members>
+        <member name="T:BackendAdvancedTest.Controllers.PlaylistSuggestController">
+            <summary>
+            Controller responsible for manage Playlist Suggest
+            </summary>
+        </member>
+        <member name="M:BackendAdvancedTest.Controllers.PlaylistSuggestController.PlaylistByCityName(BackendAdvancedTest.ViewModel.CityVM)">
+            <summary>
+            Api responsible to return Playlist Suggest by City Name
+            </summary>
+            <param name="cityVM"></param>   
+            <returns></returns>
+        </member>
+        <member name="M:BackendAdvancedTest.Controllers.PlaylistSuggestController.PlaylistByCoordinate(BackendAdvancedTest.ViewModel.CoordinateVM)">
+            <summary>
+            Api responsible to return Playlist Suggest by Coordinate
+            </summary>
+            <param name="coordinateVM"></param> 
+            <returns></returns>
+        </member>
+        <member name="T:BackendAdvancedTest.Enum.GenresType">
+            <summary>
+            Enum of Genres
+            </summary>
+        </member>
+        <member name="F:BackendAdvancedTest.Enum.GenresType.party">
+            <summary>
+            Party Genre
+            </summary>
+        </member>
+        <member name="F:BackendAdvancedTest.Enum.GenresType.pop">
+            <summary>
+            Pop Genre
+            </summary>
+        </member>
+        <member name="F:BackendAdvancedTest.Enum.GenresType.rock">
+            <summary>
+            Rock Genre
+            </summary>
+        </member>
+        <member name="F:BackendAdvancedTest.Enum.GenresType.classical">
+            <summary>
+            Classical Genre
+            </summary>
+        </member>
+        <member name="T:BackendAdvancedTest.Factory.BackendAdvancedFactory">
+            <summary>
+            Factory of Backend Advanced Test Models and View Models
+            </summary>
+        </member>
+        <member name="M:BackendAdvancedTest.Factory.BackendAdvancedFactory.CreateDomainService(BackendAdvancedTest.ViewModel.CityVM)">
+            <summary>
+            Creates a City Model
+            </summary>
+            <param name="cityVM"></param>
+            <returns>City</returns> 
+        </member>
+        <member name="M:BackendAdvancedTest.Factory.BackendAdvancedFactory.CreateDomainService(BackendAdvancedTest.ViewModel.CoordinateVM)">
+            <summary>
+            Creates a Coordinate Model
+            </summary>
+            <param name="coordinateVM"></param>
+            <returns>Coordinate</returns> 
+        </member>
+        <member name="M:BackendAdvancedTest.Factory.BackendAdvancedFactory.CreateViewModel(BackendAdvancedTest.Model.City)">
+            <summary>
+            Creates a City View Model
+            </summary>
+            <param name="city"></param>
+            <returns>CityVM</returns> 
+        </member>
+        <member name="M:BackendAdvancedTest.Factory.BackendAdvancedFactory.CreateViewModel(BackendAdvancedTest.Model.Coordinate)">
+            <summary>
+            Creates a Coordinate View Model
+            </summary>
+            <param name="coordinate"></param>
+            <returns>CoordinateVM</returns> 
+        </member>
+        <member name="M:BackendAdvancedTest.Factory.BackendAdvancedFactory.CreateViewModel(BackendAdvancedTest.Model.SpotifyRecommendationResponse)">
+            <summary>
+            Creates a playlist View Model
+            </summary>
+            <param name="spotifyRecommendationResponse"></param>
+            <returns>PlaylistVM</returns> 
+        </member>
+        <member name="T:BackendAdvancedTest.Model.City">
+            <summary>
+            Model used to define City
+            </summary>
+        </member>
+        <member name="P:BackendAdvancedTest.Model.City.Name">
+            <summary>
+            Name from city
+            </summary>
+        </member>
+        <member name="M:BackendAdvancedTest.Model.City.Validate">
+            <summary>
+            Validates City's fields
+            </summary>
+        </member>
+        <member name="T:BackendAdvancedTest.Model.Coordinate">
+            <summary>
+            Model used to define Coordinate
+            </summary>
+        </member>
+        <member name="P:BackendAdvancedTest.Model.Coordinate.Latitude">
+            <summary>
+            Latitude from city
+            </summary>
+        </member>
+        <member name="P:BackendAdvancedTest.Model.Coordinate.Longitude">
+            <summary>
+            Longitude from city
+            </summary>
+        </member>
+        <member name="M:BackendAdvancedTest.Model.Coordinate.Validate">
+            <summary>
+            Validates Coordinate's fields
+            </summary>
+        </member>
+        <member name="T:BackendAdvancedTest.Model.Base.Main">
+            <summary>
+            Model Main
+            </summary>
+        </member>
+        <member name="P:BackendAdvancedTest.Model.Base.Main.Temp">
+            <summary>
+            Tempeture of City
+            </summary>
+        </member>
+        <member name="M:BackendAdvancedTest.Model.Base.Main.Validate">
+            <summary>
+            Validate Main's fields
+            </summary>
+        </member>
+        <member name="T:BackendAdvancedTest.Model.Base.Track">
+            <summary>
+            Model defines of track
+            </summary>
+        </member>
+        <member name="P:BackendAdvancedTest.Model.Base.Track.Name">
+            <summary>
+            Name of track
+            </summary>
+        </member>
+        <member name="M:BackendAdvancedTest.Model.Base.Track.Validate">
+            <summary>
+            Validate Track's fields
+            </summary>
+        </member>
+        <member name="T:BackendAdvancedTest.Model.OpenWeatherResponse">
+            <summary>
+            Model from OpenWeatherResponse
+            </summary>
+        </member>
+        <member name="P:BackendAdvancedTest.Model.OpenWeatherResponse.Main">
+            <summary>
+            Main object
+            </summary>
+        </member>
+        <member name="M:BackendAdvancedTest.Model.OpenWeatherResponse.Validate">
+            <summary>
+            Validates OpenWeatherResponse's fields
+            </summary>
+        </member>
+        <member name="T:BackendAdvancedTest.Model.SpotifyAuthorizationResponse">
+            <summary>
+            Model from SpotifyAuthorizationResponse
+            </summary>
+        </member>
+        <member name="P:BackendAdvancedTest.Model.SpotifyAuthorizationResponse.AccessToken">
+            <summary>
+            Spotify Access Token
+            </summary>
+        </member>
+        <member name="M:BackendAdvancedTest.Model.SpotifyAuthorizationResponse.Validate">
+            <summary>
+            Validate SpotifyAuthorizationResponse's fields
+            </summary>
+        </member>
+        <member name="T:BackendAdvancedTest.Model.SpotifyRecommendationResponse">
+            <summary>
+            Model from SpotifyRecommendationResponse
+            </summary>
+        </member>
+        <member name="P:BackendAdvancedTest.Model.SpotifyRecommendationResponse.Tracks">
+            <summary>
+            List of tracks
+            </summary>
+        </member>
+        <member name="M:BackendAdvancedTest.Model.SpotifyRecommendationResponse.Validate">
+            <summary>
+            Validate SpotifyRecommendationResponse's fields
+            </summary>
+        </member>
+        <member name="T:BackendAdvancedTest.Program">
+            <summary>
+            API Program
+            </summary>
+        </member>
+        <member name="M:BackendAdvancedTest.Program.Main(System.String[])">
+            <summary>
+            Main Method
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:BackendAdvancedTest.Program.BuildWebHost(System.String[])">
+            <summary>
+            Create a Web Host
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BackendAdvancedTest.Services.OpenWeatherService">
+            <summary>
+            Service of Open Weather
+            </summary>
+        </member>
+        <member name="M:BackendAdvancedTest.Services.OpenWeatherService.GetWeatherByCityAsync(BackendAdvancedTest.Model.City)">
+            <summary>
+            Service responsible to Get Weather by City
+            </summary>
+            <param name="city">Model City</param>
+            <returns>Temp</returns>  
+        </member>
+        <member name="M:BackendAdvancedTest.Services.OpenWeatherService.GetWeatherByCoordinateAsync(BackendAdvancedTest.Model.Coordinate)">
+            <summary>
+            Service responsible to Get Weather by Coordinate
+            </summary>
+            <param name="coordinate">Model City</param>
+            <returns>Temp</returns>  
+        </member>
+        <member name="T:BackendAdvancedTest.Services.SpotifyService">
+            <summary>
+            Service of Spotify
+            </summary>
+        </member>
+        <member name="M:BackendAdvancedTest.Services.SpotifyService.GetTokenAuthorizationAsync">
+            <summary>
+            Service responsible to Request Spotify Token Authorization
+            </summary> 
+        </member>
+        <member name="M:BackendAdvancedTest.Services.SpotifyService.GetPlaylistAsync(System.String,System.Double)">
+            <summary>
+            Service responsible to Request Playlist tracks from Spotify
+            </summary> 
+            <param name="spotifyToken"></param>
+            <param name="temperature"></param>
+        </member>
+        <member name="M:BackendAdvancedTest.Services.SpotifyService.GetGenreByTemperature(System.Double)">
+            <summary>
+            Get Genre to Search by Temperature
+            </summary>
+            <param name="temperature"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAdvancedTest.Services.SpotifyService.Encode(System.String)">
+            <summary>
+            Encode Base64
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BackendAdvancedTest.Startup">
+            <summary>
+            Startup class of API
+            </summary>
+        </member>
+        <member name="M:BackendAdvancedTest.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="configuration">Configuration parameters</param>
+        </member>
+        <member name="P:BackendAdvancedTest.Startup.Configuration">
+            <summary>
+            Instance of Configuration
+            </summary>
+        </member>
+        <member name="M:BackendAdvancedTest.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+             <summary>
+            This method gets called by the runtime. Use this method to add services to the container. 
+             </summary>
+             <param name="services">Service Collection</param>
+        </member>
+        <member name="M:BackendAdvancedTest.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            /// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="M:BackendAdvancedTest.Startup.ConfigureWorkBench">
+            <summary>
+            Initializes selected cartridges for WorkBench
+            </summary>
+        </member>
+        <member name="T:BackendAdvancedTest.ViewModel.CityVM">
+            <summary>
+            View Model used to define City
+            </summary>
+        </member>
+        <member name="P:BackendAdvancedTest.ViewModel.CityVM.Name">
+            <summary>
+            Name from city
+            </summary>
+        </member>
+        <member name="M:BackendAdvancedTest.ViewModel.CityVM.Validate">
+            <summary>
+            Validates City's fields
+            </summary>
+        </member>
+        <member name="T:BackendAdvancedTest.ViewModel.CoordinateVM">
+            <summary>
+            View Model used to Request Coordinate
+            </summary>
+        </member>
+        <member name="P:BackendAdvancedTest.ViewModel.CoordinateVM.Latitude">
+            <summary>
+            Latitude from city
+            </summary>
+        </member>
+        <member name="P:BackendAdvancedTest.ViewModel.CoordinateVM.Longitude">
+            <summary>
+            Longitude from city
+            </summary>
+        </member>
+        <member name="M:BackendAdvancedTest.ViewModel.CoordinateVM.Validate">
+            <summary>
+            Validates Coordinate's fields
+            </summary>
+        </member>
+        <member name="T:BackendAdvancedTest.ViewModel.PlaylistVM">
+            <summary>
+            View Model used to Response Playlist
+            </summary>
+        </member>
+        <member name="P:BackendAdvancedTest.ViewModel.PlaylistVM.Playlist">
+            <summary>
+            List of track's name
+            </summary>
+        </member>
+        <member name="M:BackendAdvancedTest.ViewModel.PlaylistVM.Validate">
+            <summary>
+            Validates PlaylistVM's fields
+            </summary>
+        </member>
+    </members>
+</doc>

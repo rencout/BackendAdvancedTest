@@ -1,0 +1,5 @@
+{
+  "LATITUDE_MUSTNOT_BE_EMPTY": "Latitude can't be empty'",
+  "LONGITUDE_MUSTNOT_BE_EMPTY": "Longitude can't be empty'",
+  "CITY_NAME_MUSTNOT_BE_EMPTY":  "City name can't be empty'"
+}
